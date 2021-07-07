@@ -47,7 +47,7 @@ img{
     width: 50px;
 }
 
-div.container{
+.container{
     width: 95vw;
     max-width: 1170px;
     margin: 0 auto;
@@ -146,6 +146,37 @@ main{
     color: #222;
     transition: 0.3s linear;
   }
+  .container__js{
+    display: flex;
+    flex-direction: column;
+    background-color: #ebe8e89a;
+  }
+  .flex-col figure{
+      margin: 0 auto;
+  }
+  .flex-col-js{
+    height: 120px;
+    width: 120px;
+    margin-top: 40px;
+  }
+  .flex-col_javascript h2{
+    font-size: 24px;
+    font-weight: 600;
+    height: 90px;
+    width: 180px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .flex-col_javascript ul{
+    width: 200px;
+    margin: 0 auto;
+    color: var(--cinza-claro);
+    line-height: 1.7;
+    margin-top: 20px;
+  }
+  .flex-col_javascript li::before{
+    content: ". ";
+  }
   /* Button */
 .secaoDestaque__button {
     height: 40px;
@@ -157,6 +188,48 @@ main{
     outline: none;
     font-family: var(--primary-font);
   }
+  .flex-col{
+    display: flex;
+    flex-direction: column;  
+    width: 80vw;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: initial;
+  }
+  .flex-col h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 50px;
+    color: var(--cinza);
+  }
+  .flex-col p{
+    font-size: 19px;
+    color: var(--cinza);
+    margin-top: 50px;
+    line-height: 1.5;
+  }
+  .flex-col span{
+    font-size: 15px;
+    color: var(--cinza-claro);
+    margin-top: 30px;
+    line-height: 1.7;
+  }
+  .flex-col button{
+    height: 45px;
+    width: 270px;
+    border-radius: 7px;
+    color: #000;
+    background: var(--branco);
+    font-family: var(--primary-font);
+    font-size: 17px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .flex-col-py{
+    height: 150px;
+    width: 270px;
+  }
+
 /* INICIAL */
 
 /* EXTRAS */
@@ -218,6 +291,36 @@ main{
             border-radius: 9px;
             color: #222;
             transition: 0.3s linear;
+        }
+        .flex-col{
+            max-width: 660px;
+        }
+        .flex-col button{
+            margin-left: 0;
+        }
+        .flex__py{
+            display: flex;
+        }.flex-col-py{
+            width: 490px;
+            height: 290px;
+            margin-top: 40px;
+        }
+        .container__js{
+            display: flex;
+            flex-direction: row;
+        }
+        .flex-col_javascript h2{
+            width: 660px;
+            height: auto;
+            margin-top: 70px;
+        }
+        .flex-col_javascript ul{
+            width: 660px;
+        }
+        .flex-col-js{
+            margin-top: 40px;
+            height: 200px;
+            width: 200px;
         }
     }
 /* MEDIA QUERIES */
