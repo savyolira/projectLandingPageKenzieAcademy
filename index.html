@@ -4,57 +4,68 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="shortcut icon" href="icon-96x96.webp">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+        crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
   <title>Landing Page Kenzie Academy</title>
 </head>
 <body>
   
   <!-- CABEÇALHO -->
-  <header class="topo">
+  <header>
 
-    <div class="large-container">
+    <div class="container" id="header">
       <!-- LOGO -->
-      <figure>
+      <figure class="header__logo">
         <img src="assets/img/logo.svg" alt="Logo Kenzie Academy">
         <figcaption>Logo Kenzie Academy</figcaption>  
       </figure>
 
       <!-- MENU DE NAVEGAÇÃO -->
-      <nav>
-        <ul>
-          <li><a href="#1">Sobre a Kenzie</a></li>
-          <li><a href="#2">Agenda</a></li>
-          <li><a href="#3">Contato</a></li>
-        </ul>
+      <nav class="header__nav">
+          <a href="#1" class="header__nav__link">Sobre a Kenzie</a>
+          <a href="#2" class="header__nav__link">Agenda</a>
+          <a href="#3" class="header__nav__link">Contato</a>
       </nav>
+      
+      <div class="header__menu">
+        <i class="fas fa-bars"></i>
+      </div>
     </div>
 
   </header>
 
-  <!-- PÁGINA INICIAL -->
   <main class="inicial">
 
-    <!-- ÁREA DE DESTAQUE -->
+    
     <section class="secaoDestaque">
+      <div class="container" id="section__secaoDestaque">
+        <div class="section__secaoDestaque__Pri">
+          <h2>Lorem ipsum dolor sit Python</h2>
+          <p>100% Online</p>
+        </div>
 
-      <h2>Lorem ipsum dolor sit Python</h2>
-      <p>100% Online</p>
-
-      <!-- FORMULÁRIO -->
-      <div class="secaoDestaqueFormulario">
-        <input type="email"  placeholder="E-mail" required>
-        <button type="button">Subscribe</button>
+        <div class="secaoDestaqueFormulario">
+          <input type="email"  placeholder="   E-mail" required>
+          <button class="secaoDestaque__button" type="button">Subscribe</button>
+        </div>
       </div>
-
     </section>
-
-    <!-- SEÇÃO SOBRE -->
+ 
     <section class="secaoSobre">
 
       <article class="flex">
         
-        <!-- COLUNA ESQUERDA -->
+       
         <div class="flex-col">
 
           <h2>LOREM IPSUM DOLOR SIT PYTHON</h2>
@@ -66,8 +77,7 @@
           <button>Subscribe</button>
 
         </div>
-
-        <!-- COLUNA DIREITA -->
+        
         <div class="flex-col">
 
           <figure>
@@ -77,7 +87,6 @@
 
         </div>
 
-        <!-- COLUNA ESQUERDA -->
         <div class="flex-col">
 
             <figure>
@@ -87,7 +96,6 @@
   
           </div>
 
-        <!-- COLUNA DIREITA -->
         <div class="flex-col">
 
             <h2> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
@@ -107,7 +115,7 @@
 
     </section>
 
-    <!-- SEÇÃO CURSOS -->
+  <!--
     <section class="secaoCursos">
 
       <article>
@@ -115,7 +123,7 @@
         <h2>COURSES</h2>
         <p>What we offer</p>
 
-        <!-- LISTA DE CURSOS -->
+        
         <ul>
         
           <li>
@@ -165,7 +173,7 @@
       <h2>SCHEDULE</h2>
       <p>Lorem ipsum dolor sit schedule</p>
 
-      <!-- LISTA CALENDÁRIO -->
+      
       <ul class="calendario">
 
         <li>
@@ -206,7 +214,7 @@
 
       <div class="flex">
 
-        <!-- COLUNA LADO ESQUERDO -->
+        
         <div class="flex-col">
           
           <div class="secaoContato-informacoes">
@@ -223,7 +231,7 @@
 
         </div>
 
-        <!-- COLUNA LADO DIRETO -->
+       
         <div class="flex-col">
           
           <h2>Contact</h2>
@@ -260,7 +268,7 @@
   <footer>
     <p>Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a></p>
   </footer>
-
+ -->
   <script src="assets/js/script.js"></script>
 </body>
 </html>
