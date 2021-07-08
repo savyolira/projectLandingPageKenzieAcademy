@@ -7,7 +7,6 @@ Author URI: https://kenzie.com.br/
 Description: Descrção do thema.
 Version: 1.0
 Text Domain: https://kenzie.com.br/
-
 --------------------------------------------
 ESTRUTURAÇÃO BASE
 --------------------------------------------
@@ -19,7 +18,6 @@ ESTRUTURAÇÃO BASE
 **** PÁGINA INICIAL
 **** EXTRAS
 **** @MEDIA
-
 family=Montserrat -> Menus
 family=Lato -> Títulos, textos
 */
@@ -46,8 +44,12 @@ img{
     height: 50px;
     width: 50px;
 }
-
 .container{
+    width: 100vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.container__header{
     width: 95vw;
     max-width: 1170px;
     margin: 0 auto;
@@ -67,14 +69,12 @@ html{}
 /* BODY */
 body{
     background-color: var(--branco);
-    padding-top: 108px;
 }
 /* BODY */
   
 /* HEADER */
 header{
     width: 100%;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -136,15 +136,17 @@ main{
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .secaoDestaqueFormulario input[type='email'] {
     height: 40px;
     width: 250px;
     background: var(--branco);
     outline: none;
-    border-radius: 9px;
+    border-radius: 9px 0px 0px 9px;
     color: #222;
     transition: 0.3s linear;
+    border: none;
   }
   .container__js{
     display: flex;
@@ -173,20 +175,22 @@ main{
     color: var(--cinza-claro);
     line-height: 1.7;
     margin-top: 20px;
-  }
-  .flex-col_javascript li::before{
-    content: ". ";
+    list-style: disc;
   }
   /* Button */
-.secaoDestaque__button {
-    height: 40px;
-    border-radius: 9px;
+  .secaoDestaque__button {
+    height: 43px;
+    border-radius: 0px 9px 9px 0px;
     padding-left: 22px;
     padding-right: 22px;
     color: var(--branco);
     background: #1480fb;
     outline: none;
     font-family: var(--primary-font);
+    border: 2px solid var(--azul-claro);
+  }
+  .secaoDestaque__button:hover{
+    background-color: aqua;
   }
   .flex-col{
     display: flex;
@@ -224,37 +228,25 @@ main{
     font-size: 17px;
     margin: 0 auto;
     margin-top: 30px;
+    border: 1px solid black;
+  }
+  .flex-col button:hover{
+    background-color: aqua;
   }
   .flex-col-py{
-    height: 150px;
     width: 270px;
+    height: 150px;
   }
 
 /* INICIAL */
 
-/* EXTRAS */
-
-/* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
-
-/* EXTRAS */
-  
-
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
   
     @media screen and (min-width: 800px) {
         .header__nav{
             display: flex;
             text-align: center;
         }
-
         .header__menu{
             display: none;
         }
@@ -288,39 +280,44 @@ main{
             width: 550px;
             background: var(--branco);
             outline: none;
-            border-radius: 9px;
             color: #222;
             transition: 0.3s linear;
         }
         .flex-col{
-            max-width: 660px;
+            width: 50%;
         }
         .flex-col button{
             margin-left: 0;
         }
         .flex__py{
             display: flex;
-        }.flex-col-py{
-            width: 490px;
-            height: 290px;
-            margin-top: 40px;
+        }
+        .flex-col-py{
+            margin-top: 100px;
+            height: 240px;
+            width: 370px;
         }
         .container__js{
             display: flex;
             flex-direction: row;
         }
+        .flex-col_javascript{
+            width: 50%;
+        }
         .flex-col_javascript h2{
-            width: 660px;
-            height: auto;
             margin-top: 70px;
+            width: 100%;
         }
         .flex-col_javascript ul{
-            width: 660px;
+            width: 100%;
         }
         .flex-col-js{
-            margin-top: 40px;
-            height: 200px;
-            width: 200px;
+            margin-top: 50px;
+            height: 300px;
+            width: 300px;
+        }
+        .flex-col figure{
+            margin-left: 0;
         }
     }
 /* MEDIA QUERIES */
